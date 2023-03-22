@@ -3,10 +3,9 @@ process.env.NODE_ENV = "test";
 
 fixture`Testing Student UI`
     .page`http://localhost:4401/student`
-    .pageRequestTimeout(3000)
 
 test('Testing add students', async t => {
-    
+    await t.setPageLoadTimeout(3000);
     await t.navigateTo("/dbinitialize");
 
     await t.navigateTo("/addStudent");
