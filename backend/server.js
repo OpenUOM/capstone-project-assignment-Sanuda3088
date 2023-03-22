@@ -131,7 +131,7 @@ app.post("/editStudent", async function (req, res) {
   );
   let data = await updateStudent(reqBody.name,reqBody.age,reqBody.hometown,reqBody.id);
 
-  res.setHeader("Content-Type", "application/json");
+  res.setHeader("Content-Type", "application/json"); 
   res.end(JSON.stringify(data));
 });
 
