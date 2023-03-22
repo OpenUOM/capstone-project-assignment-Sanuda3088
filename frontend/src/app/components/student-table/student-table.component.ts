@@ -42,9 +42,9 @@ export class StudentTableComponent implements OnInit {
     })
   }
 
-  deleteStudent(itemid){
+  deleteStudent(id){
     const student = {
-      id: itemid
+      id: id
     }
     this.service.deleteStudent(student).subscribe((response)=>{
       this.getStudentData()
