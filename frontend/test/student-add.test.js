@@ -5,7 +5,6 @@ fixture`Testing Student UI`
     .page`http://localhost:4401/student`
 
 test('Testing add students', async t => {
-    await test.timeouts(4000);
     await t.navigateTo("/dbinitialize");
 
     await t.navigateTo("/addStudent");

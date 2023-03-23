@@ -4,7 +4,6 @@ process.env.NODE_ENV = "test";
 fixture`Testing Teacher UI`
     .page`http://localhost:4401/`
 test('Testing edit teachers', async t => {
-    await test.timeouts(4000);
     await t.navigateTo("/");
     await t.click("#teacher-edit-10003");
 

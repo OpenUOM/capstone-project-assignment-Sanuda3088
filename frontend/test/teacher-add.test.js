@@ -6,7 +6,6 @@ fixture`Testing Teacher UI`
     
 
 test('Testing add teachers', async t => {
-    await test.timeouts(4000);
     await t.navigateTo("/dbinitialize");
 
     await t.navigateTo("/addTeacher");
