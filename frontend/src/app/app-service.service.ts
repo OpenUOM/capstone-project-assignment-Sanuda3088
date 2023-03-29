@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../environments/environment';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,7 @@ export class AppServiceService {
 
   constructor(private http: HttpClient) {
     if(environment.production == false){
-      this.ROOT_URL = 'http://localhost:8080'
+      this.ROOT_URL = 'test'
     }else{
       this.ROOT_URL = 'api'
     }
