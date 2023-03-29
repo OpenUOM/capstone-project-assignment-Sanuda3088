@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
-import { faTrash, faPlus, faPenSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTorah, faPlug, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { AppServiceService } from '../../app-service.service';
 @Component({
   selector: 'app-teacher-table',
@@ -9,9 +9,9 @@ import { AppServiceService } from '../../app-service.service';
 })
 export class TeacherTableComponent implements OnInit {
 
-  faTrash = faTrash;
-  faPlus = faPlus;
-  faPenSquare = faPenSquare;
+  faTrash = faTorah;
+  faPlus = faPlug;
+  faPenSquare = faPenToSquare;
   teacherData: any;
   selected: any;
 
