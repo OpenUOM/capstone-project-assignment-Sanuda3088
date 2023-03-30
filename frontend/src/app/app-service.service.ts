@@ -19,46 +19,46 @@ export class AppServiceService {
   }
 
   initializeDB(){
-    return this.http.get(`/${this.ROOT_URL}/dbinitialize`)
+    return this.http.get(`/${this.ROOT_URL}/#dbinitialize`)
   }
 
   getTeacherData(){
-    return this.http.get(`/${this.ROOT_URL}/listTeachers`)
+    return this.http.get(`/${this.ROOT_URL}/#listTeachers`)
   }
 
   getStudentData(){
-    return this.http.get(`/${this.ROOT_URL}/listStudents`)
+    return this.http.get(`/${this.ROOT_URL}/#listStudents`)
   }
 
   getOneStudentData(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/getStudentInfo`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#getStudentInfo`, payload)
   }
 
   getOneTeacherData(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/getTeacherInfo`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#getTeacherInfo`, payload)
   }
 
   addTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/addTeacher`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#addTeacher`, payload)
   }
 
   deleteTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/deleteTeacher`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#deleteTeacher`, payload)
   }
 
   editTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/editTeacher`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#editTeacher`, payload)
   }
 
   editStudent(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/editStudent`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#editStudent`, payload)
   }
 
   addStudent(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/addStudent`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#addStudent`, payload)
   }
 
   deleteStudent(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/deleteStudent`, payload)
+    return this.http.post(`/${this.ROOT_URL}/#deleteStudent`, payload)
   }
 }
