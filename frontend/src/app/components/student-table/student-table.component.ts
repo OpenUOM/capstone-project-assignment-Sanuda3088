@@ -22,7 +22,7 @@ export class StudentTableComponent implements OnInit {
   }
 
   addNewStudent(){
-    this.router.navigate(['addStudent'])
+    this.router.navigate(['#addStudent'])
   }
 
   editStudent(id){
@@ -31,7 +31,7 @@ export class StudentTableComponent implements OnInit {
         id : id
       }
     };
-    this.router.navigate(['editStudent'], navigationExtras )
+    this.router.navigate(['#editStudent'], navigationExtras )
   }
 
   getStudentData(){
