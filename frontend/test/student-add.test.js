@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 process.env.NODE_ENV = "test";
 
 fixture`Testing Student UI`
-    .page`http://localhost:8080/student`
+    .page`http://localhost:4401/student`.pageRequestTimeout(60000);
 
 test('Testing add students', async t => {
     await t.navigateTo("/dbinitialize");
